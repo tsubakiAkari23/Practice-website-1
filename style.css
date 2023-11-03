@@ -72,7 +72,7 @@ h1 {
     padding: 2rem 4rem;
     border-radius: 1rem;
     height: fit-content;
-    right: 16rem;
+    right: 16rem; 
 }
 
 .hero .text div {
@@ -281,7 +281,8 @@ footer .maker {
     header {
         flex-direction: column;
         justify-content: center;
-        align-items: center;    
+        align-items: center;   
+        height: fit-content;
     }
 
     header h1 {
@@ -297,7 +298,7 @@ footer .maker {
     .hero {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         height: 100%;
     }
@@ -309,13 +310,14 @@ footer .maker {
         height: 90%;
     }
 
-    .hero text {
+    .hero .text {
         top: 90%;
-        width: 100%;
-        border: 1px solid red;
+        width: 90%;
+        margin: auto;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center;  
     }
 
     /* shop section */
