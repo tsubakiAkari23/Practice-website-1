@@ -272,7 +272,7 @@ footer .maker {
 /* Responsive */
 
 /* mobile */
-@media (max-width: 667px) {
+@media (min-width:300px) and (max-width: 667px) {
     body {
         overflow-x: hidden;
     }
@@ -280,25 +280,26 @@ footer .maker {
     /* header section */
     header {
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;   
         height: fit-content;
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: .5rem;
     }
 
     header .nav a {
         font-size: .8rem;        
-        padding: .5rem 1rem;
+        padding: 1rem;
     }
     
     /* hero section */
     .hero {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: center;
         height: 100%;
     }
@@ -320,6 +321,10 @@ footer .maker {
         justify-content: center;  
     }
 
+    .hero .text div {
+        text-align: center;
+    }
+
     /* shop section */
     .card-section {
         display: grid;
@@ -327,6 +332,9 @@ footer .maker {
         gap: 2rem;
         margin: auto;
     }
+    /* .card .info .fave {
+        margin: auto;
+    }  */
 
     /* contact section */
     .contact-form {
