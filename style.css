@@ -163,7 +163,8 @@ h1 {
     font-style: italic;
     font-size: 1rem;
     color: hsl(271, 58%, 65%);
-
+    margin: 0 1rem;
+    text-align: center;
 }
 .card:hover {
     background-color: hsl(18, 50%, 88%);
@@ -332,9 +333,9 @@ footer .maker {
         gap: 2rem;
         margin: auto;
     }
-    /* .card .info .fave {
+    .card .info {
         margin: auto;
-    }  */
+    } 
 
     /* contact section */
     .contact-form {
