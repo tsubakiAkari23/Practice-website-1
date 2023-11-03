@@ -9,6 +9,7 @@
 
 /* header */
 header{
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +40,7 @@ h1 {
 .nav a {
     text-decoration: none;
     color: black;
-    padding: 1.5rem;
+    padding: 1.1rem;
     font-size: 1.3rem;
 }
 
@@ -52,8 +53,10 @@ h1 {
 .hero {
     background-color: #ECE5DC;
     display: flex;
-    position: relative;
+    justify-content: space-around;
+    align-items: center;
     height: 70%;
+    padding-bottom: 3rem;
 }
 
 .hero img {
@@ -63,27 +66,34 @@ h1 {
 }
 
 .hero .text {
+    width: 50%;
     background-color: #FFCACC;
+    margin: auto;
     padding: 2rem 4rem;
     border-radius: 1rem;
-    position: absolute;
+    height: fit-content;
     right: 16rem;
-    top: 25%;
 }
 
 .hero .text div {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: inherit;
-    font-style: oblique;
+    /* font-style: oblique; */
+    color: hsl(271, 58%, 35%);
+}
+
+.hero .text div span {
+    font-weight: bold;
 }
 
 .hero button{
     background-color: hsl(120, 19%, 66%);
     color: white;
+    font-size: .8rem;
     border: hsl(120, 19%, 76%);
     outline: none;
     margin-top: 1rem;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -109,7 +119,6 @@ h1 {
 .card-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: max-content;
     row-gap: 3rem;
     column-gap: 5rem;
     margin: 2rem 5rem;
@@ -236,7 +245,6 @@ footer {
     padding: 1rem 10rem;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     background-color: hsl(120, 19%, 66%);
 }
 
@@ -257,4 +265,131 @@ footer .social-media i:hover {
 footer .maker {
     color: white;
     font-size: 1rem;
+}
+
+
+
+/* Responsive */
+
+/* mobile */
+@media (max-width: 667px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* header section */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header .nav a {
+        font-size: .8rem;        
+        padding: .5rem 1rem;
+    }
+    
+    /* hero section */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero img {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 90%;
+    }
+
+    .hero text {
+        top: 90%;
+        width: 100%;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* shop section */
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: auto;
+    }
+
+    /* contact section */
+    .contact-form {
+        width: 90%;
+    }
+
+    /* footer section */
+    .footer {
+        height: 80px;
+        padding: 1rem;
+    }
+}
+
+/* ipad */
+@media (min-width: 668px) and (max-width: 1180px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* header section */
+    header {
+        padding-right: 1rem;
+        height: 3.5rem;
+    }
+    header .nav a {
+        font-size: 1rem;        
+        padding: .8rem;
+    } 
+
+    /* hero section */
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+    }
+
+    .hero img {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero .text {
+        top: 90%;
+        padding: 1rem;
+        margin-right: 2rem;
+    }
+
+    /* shop section */
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: auto;
+    }
+
+    /* contact section */
+    .contact-form {
+        width: 70%;
+    }
+
+    /* footer section */
+    .footer {
+        height: 80px;
+        padding: 1rem;
+    }
 }
